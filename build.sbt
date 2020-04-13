@@ -7,7 +7,7 @@ lazy val commonSettings = Seq(
 
 lazy val app = (project in file(".")).settings(commonSettings: _*).settings(
   mainClass in assembly := Some("jp.ed.nnn.player.Main"),
-  assemblyJarName in assembly := "player.jar"
+  assemblyJarName in assembly := "MediaPlayer.jar"
 )
 
 val osName: SettingKey[String] = SettingKey[String]("osName")
